@@ -1,0 +1,59 @@
+<!--gNovel/bookshelf/bookshelf.wxml-->
+<view class="shujia">
+  <view class="shujiaVi">
+
+      <view class="shujiaVis">
+        <view class="shujiaVi1">
+          <view><image src="/gNovel/imgsG/like2.jpg"></image></view>
+          <view class="sj">
+            <view class="sjTxt1">我在异界有个宝箱</view>
+
+            <view class="sjVi">
+              <text class="sjTxt2">最新章节：\n</text>
+              <text space="nbsp" class="sjTxt3">第1235章  带你去个地方</text>
+            </view>
+
+            <view class="sjVi1">
+              <text class="sjTxt4">1天前更新</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="shujiaVis">
+        <view class="shujiaVi1">
+          <view><image src="/gNovel/imgsG/like2.jpg"></image></view>
+          <view class="sj">
+            <view class="sjTxt1">我在异界有个宝箱</view>
+
+            <view class="sjVi">
+              <text class="sjTxt2">最新章节：\n</text>
+              <text space="nbsp" class="sjTxt3">第1235章  带你去个地方</text>
+            </view>
+
+            <view class="sjVi1">
+              <text class="sjTxt4">1天前更新</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="shujiaVis">
+        <view class="shujiaVi1">
+          <view><image src="/gNovel/imgsG/like1.jpg"></image></view>
+          <view class="sj">
+            <view class="sjTxt1">九星霸体决</view>
+
+            <view class="sjVi">
+              <text class="sjTxt2">最新章节：\n</text>
+              <text space="nbsp" class="sjTxt3">第3648章  送棺材</text>
+            </view>
+
+            <view class="sjVi1">
+              <text class="sjTxt4">41分钟前更新</text>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>

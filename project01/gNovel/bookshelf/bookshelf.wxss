@@ -1,0 +1,38 @@
+/* gNovel/bookshelf/bookshelf.wxss */
+.shujia{
+  display: flex;
+  justify-content: center;
+}
+.shujiaVi{
+  width: 90%;
+  height: 900rpx;
+
+}
+.shujiaVi1 image{
+    height: 250rpx;
+    width: 200rpx;
+}
+.shujiaVis{
+  border-top:1rpx solid rgb(165, 165, 165);
+  height: 350rpx;
+}
+.shujiaVi1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+}
+.sj{
+  margin-left: 20rpx;
+  width: 100%;
+}
+.sjTxt1{
+  height: 70rpx;
+  font-weight: 600;
+}
+.sjVi{
+  font-size: 35rpx;
+  height: 130rpx;
+}
+.sjVi1{
+  font-size: 30rpx;
+}

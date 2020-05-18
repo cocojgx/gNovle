@@ -1,0 +1,2 @@
+<!--gNovel/text01/text01.wxml-->
+<navigator url="/gNovel/bootsort/bootsort" hover-class="navigator-hover">页面跳转</navigator>

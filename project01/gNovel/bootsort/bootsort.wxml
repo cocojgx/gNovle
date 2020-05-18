@@ -1,0 +1,66 @@
+<!--gNovel/bootsort/bootsort.wxml-->
+<view class="bsoMax">
+    <view class="bsoVi">
+        <view class="lx"><text>类型</text></view>
+        <view class="fVi">
+
+          <view class="fVis">
+            <view class="fVi1">
+              <view><image src="/gNovel/imgsG/like2.jpg"></image></view>
+              <view class="fl">
+                <view class="flsTxt1">我在异界有个宝箱</view>
+
+                  <view class="flsVi">
+                    <text space="nbsp" class="txt01">啊实打实的阿斯顿自行车在线擦谁打的阿达是成长性擦拭的是的撒自行车在线擦的啊实打实的啊实打实的打的阿达是成长性擦拭的是的222</text>
+                  </view>
+
+                  <view class="flsVi1">
+                    <view class="fls3">
+                        <text>母鸡不会生鸡蛋</text>
+                    </view>
+
+                    <view class="fls4">
+                      <text>连载</text>
+                    </view>
+
+                    <view class="fls4">
+                      <text>玄幻</text>
+                    </view>
+
+                  </view>
+                </view>
+            </view>
+          </view>
+
+        <view class="fVis">
+            <view class="fVi1">
+              <view><image src="/gNovel/imgsG/like2.jpg"></image></view>
+              <view class="fl">
+                <view class="flsTxt1">我在异界有个宝箱</view>
+
+                  <view class="flsVi">
+                    <text space="nbsp" >啊实打实的阿斯顿自行车在线擦谁打的阿达是成长性擦拭的是的撒自行车在线擦的啊实打实的啊实打实的</text>
+                  </view>
+
+                  <view class="flsVi1">
+                    <view class="fls3">
+                        <text>母鸡不会生鸡蛋</text>
+                    </view>
+
+                    <view class="fls4">
+                      <text>完结</text>
+                    </view>
+
+                    <view class="fls4">
+                      <text>玄幻</text>
+                    </view>
+
+                  </view>
+                </view>
+            </view>
+          </view>
+
+
+      </view>
+    </view>
+</view>

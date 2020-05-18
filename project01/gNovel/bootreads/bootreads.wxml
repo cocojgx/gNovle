@@ -1,0 +1,24 @@
+<!--pages/test02/test02.wxml-->
+<view class="vi">
+
+  <!-- <view class="vi1" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">123</view>
+  <view class="vi2">2323</view>
+  <view class="vi3">3434</view> -->
+<!-- <view class="container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+{{content}}
+</view> -->
+  <view class="vv">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:1170rpx'>
+      <view wx:for="{{reads}}">
+        <swiper-item>
+          <view class="slide-image">
+            <text>{{item}}</text>
+          </view>
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+  <view animation="{{animationData}}" class="tzCss" bindtap="showT">
+  
+  </view>
+</view>

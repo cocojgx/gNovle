@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "gNovel/index/index",
+    "gNovel/bootreads/bootreads",
+    "gNovel/users/users",
+    
+    "gNovel/bootsort/bootsort",
+    "gNovel/text01/text01",
+    "gNovel/bookshelf/bookshelf",
+    "gNovel/sort/sort"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#3A82F8",
+    "list": [
+      {
+        "iconPath": "/imgs/tourimg/1.png",
+        "selectedIconPath": "/imgs/tourimg/4.png",
+        "pagePath": "gNovel/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/imgs/tourimg/tb02.png",
+        "selectedIconPath": "/imgs/tourimg/tb2.png",
+        "pagePath": "gNovel/sort/sort",
+        "text": "分类"
+      },
+      {
+        "iconPath": "/imgs/tourimg/tb03.png",
+        "selectedIconPath": "/imgs/tourimg/tb3.png",
+        "pagePath": "gNovel/bookshelf/bookshelf",
+        "text": "书架"
+      },
+      {
+        "iconPath": "/imgs/tourimg/tb4.png",
+        "selectedIconPath": "/imgs/tourimg/tb04.png",
+        "pagePath": "gNovel/text01/text01",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

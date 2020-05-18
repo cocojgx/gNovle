@@ -1,0 +1,38 @@
+/* gNovel/text01/text01.wxss */
+.book{
+  height: 10rem;
+  width: 100%;
+  background: #FFF;
+  position: absolute;
+  transform: rotateX(30deg);
+}
+/*每页的公共样式*/
+.book-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:1000rpx;
+  border: 1px solid #1976D2;
+  text-align: center;
+  background-color: #fff;
+}
+.book-page p{
+  font-size: 120rpx;
+  margin-top: 200rpx;
+  color: #ff6300;
+  backface-visibility:hidden;
+}
+/*首页样式*/
+.first-page{
+  background-color: #1976D2;
+}
+
+/*动画部分*/
+/*I'm the home page动画*/
+.flip-animation-start {
+  animation: flipBook1 3s forwards;
+}
+.flip-animation-end {
+  animation: flipBook2 3s forwards;
+}

@@ -1,0 +1,69 @@
+<!--gNovel/sort/sort.wxml-->
+ <view class="fl">
+    <view class="flVi">
+
+      <view class="flV">
+          <view class="flVi1">
+            <image src="/gNovel/imgsG/like2.jpg"></image>
+            <view class="flTxt">
+                都市
+            </view>
+          </view>
+
+          <view class="flVi1">
+            <image src="/gNovel/imgsG/like2.jpg"></image>
+            <view class="flTxt">
+                玄幻
+            </view>
+          </view>
+      </view>
+
+       <view class="flV">
+          <view class="flVi1">
+            <image src="/gNovel/imgsG/like1.jpg"></image>
+            <view class="flTxt">
+                仙侠
+            </view>
+          </view>
+
+          <view class="flVi1">
+            <image src="/gNovel/imgsG/like2.jpg"></image>
+            <view class="flTxt">
+                恐怖
+            </view>
+          </view>
+      </view>
+
+       <view class="flV">
+          <view class="flVi1">
+            <image src="/gNovel/imgsG/like1.jpg"></image>
+            <view class="flTxt">
+                军事
+            </view>
+          </view>
+
+          <view class="flVi1">
+            <image src="/gNovel/imgsG/like2.jpg"></image>
+            <view class="flTxt">
+                科幻
+            </view>
+          </view>
+      </view>
+
+       <view class="flV">
+          <view class="flVi1">
+            <image src="/gNovel/imgsG/like2.jpg"></image>
+            <view class="flTxt">
+                悬疑
+            </view>
+          </view>
+
+          <view class="flVi1">
+            <image src="/gNovel/imgsG/like1.jpg"></image>
+            <view class="flTxt">
+                武侠
+            </view>
+          </view>
+      </view>
+    </view>
+ </view>

@@ -1,0 +1,26 @@
+/* gNovel/sort/sort.wxss */
+.flVi1 image{
+    height: 200rpx;
+    width: 150rpx;
+}
+.fl{
+  display: flex;
+  justify-content: center;
+}
+.flVi{
+  width: 85%;
+}
+.flV{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50rpx;
+}
+.flVi1{
+  display: flex;
+  flex-direction: row;
+}
+.flTxt{
+  line-height: 200rpx;
+  margin-left: 30rpx;
+}

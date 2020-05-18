@@ -1,0 +1,114 @@
+/* gNovel/index/index.wxss */
+.slide-image{
+  width: 92%;
+  margin-left: 4%;
+  padding-top: 30rpx;
+}
+.g_iput{
+    height: 60rpx;
+    font-size: 30rpx;
+    width: 500rpx;
+    margin-top: 10rpx;
+}
+.gk_vi{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.gk_vi1{
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  border: 1rpx solid #e8e8e8;
+  border-radius: 15rpx;
+  width: 92%;
+  background: #e8e8e8;
+  margin-top: 20rpx;
+}
+.gk_vi1 image{
+    width: 80rpx;
+    height: 80rpx;
+    background: url(http://39.97.186.53/img/mbg01.png) -1232px -310px;
+}
+
+.gk_likeVi{
+  height: 450rpx;
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 20rpx;
+}
+.gk_likeVi1{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.likeZZ{
+  font-size: 35rpx;
+  color: darkgrey;
+}
+.likeBoot{
+  font-size: 35rpx;
+}
+.likeVi3{
+  width: 140rpx;
+}
+.gk_txt1{
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.gk_likeVi2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gk_likeVi2 image{
+  height: 200rpx;
+  width: 140rpx;
+}
+.bootVi{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bootVi1{
+
+  height: 800rpx;
+  width: 92%;
+}
+.bootXh{
+  font-size: 35rpx;
+  font-weight: 600;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.bootVi2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.bootTxt{
+  width: 100%;
+  margin-left: 20rpx;
+}
+.bootName{
+  font-weight: 600;
+  height: 70rpx;
+}
+.bootJj{
+
+  height: 80rpx;
+  font-size: 30rpx;
+  color: rgb(32, 32, 32);
+  text-overflow: ellipsis;
+  -webkit-line-clamp:3;
+}
+.bootZZ{
+
+  font-size: 30rpx;
+  color: rgb(20, 20, 20);
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.bootVi2 image{
+  height: 200rpx;
+  width: 140rpx;
+}

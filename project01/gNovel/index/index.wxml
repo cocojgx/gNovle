@@ -1,0 +1,320 @@
+<!--gNovel/index/index.wxml-->
+<view>
+
+  <view class="gk_vi">
+    <view class="gk_vi1">
+      <view>
+        <image class=""></image>
+      </view>
+      <view>
+        <input class="g_iput" auto-focus placeholder="搜索小说" />
+      </view>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view class="ggl">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  class="swipers">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="gk_likeVi">
+      <view class="gk_likeVi1">
+        <text class="gk_txt1">猜你喜欢</text>
+        <text></text>
+      </view>
+
+      <view class="gk_likeVi2">
+            <navigator url="/gNovel/bootsort/bootsort" hover-class="navigator-hover">
+            <view class="likeVi3" bindtap="goToText01">
+                <view>
+                  <image src="/gNovel/imgsG/like1.jpg"></image>
+                </view>
+                <view>
+                  <text class="likeBoot">书名1\n</text>
+                  <text class="likeZZ">作者</text>
+                </view>
+            </view>
+            </navigator>
+            <view class="likeVi3">
+                <image src="/gNovel/imgsG/like2.jpg"></image>
+                <view>
+                  <text class="likeBoot">书名\n</text>
+                  <text class="likeZZ">作者</text>
+                </view>
+            </view>
+            <view class="likeVi3">
+                <image src="/gNovel/imgsG/like1.jpg"></image>
+                <view>
+                  <text class="likeBoot">书名\n</text>
+                  <text class="likeZZ">作者</text>
+                </view>
+            </view>
+            <view class="likeVi3">
+                <image src="/gNovel/imgsG/like2.jpg"></image>
+                <view>
+                  <text class="likeBoot">书名\n</text>
+                  <text class="likeZZ">作者</text>
+                </view>
+            </view>
+      </view>
+  </view>
+
+  
+  <view class="bootVi">
+      <view class="bootVi1">
+        <view class="bootXh">
+          <text>玄幻</text>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>冥主</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">春衫年少，细雨微茫，他是四季山庄的贵公子。江湖之远，庙堂之高，他是...</text>
+                </view>
+                <view class="bootZZ">
+                  <text>中原五百</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>云行记</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">乘云飞去空万里，看沐风雪雨迷蒙。阴阳轮转日</text>
+                </view>
+                <view class="bootZZ">
+                  <text>步蟾宫</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>崩坏：起源</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">[正统末世文，-部微观的成长史，-部宏观的</text>
+                </view>
+                <view class="bootZZ">
+                  <text>墨香双鱼</text>
+                </view>
+            </view>
+        </view>
+
+      </view>
+  </view>
+
+  <view class="bootVi">
+      <view class="bootVi1">
+        <view class="bootXh">
+          <text>都市</text>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+        
+      </view>
+  </view>
+
+  <view class="bootVi">
+      <view class="bootVi1">
+        <view class="bootXh">
+          <text>恐怖</text>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+        
+      </view>
+  </view>
+
+  <view class="bootVi">
+      <view class="bootVi1">
+        <view class="bootXh">
+          <text>搞笑</text>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="bootVi2">
+            <view>
+              <image src="/gNovel/imgsG/like2.jpg"></image>
+            </view>
+
+            <view class="bootTxt">
+                <view class="bootName">
+                  <text>书名</text>
+                </view>
+                <view class="bootJj">
+                  <text class="bootJjTxt">简介简介简介简介简介简介简介简介简介简介简介简介简</text>
+                </view>
+                <view class="bootZZ">
+                  <text>书名</text>
+                </view>
+            </view>
+        </view>
+        
+      </view>
+  </view>
+</view>
