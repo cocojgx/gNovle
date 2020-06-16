@@ -1,3 +1,63 @@
-<!--gNovel/users/users.wxml-->
-<text>个人信息</text>
-<navigator url="/gNovel/bootsort/bootsort" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+﻿<!--gNovel/users/users.wxml-->
+<!-- <text>个人信息</text>
+
+<navigator url="/gNovel/index/index" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator> -->
+<view class="bigBox">
+    <view class="avator">
+      <image class="userinfo-avatar" src="{{head}}" mode="cover" bindtap="upload"></image>
+    </view>
+  <view class="topBox1">
+    <view class="block1" bindtap='tapName'>
+      <text class="t1">用户名</text>
+      <text class="userinfo-nickname">{{name}}</text>
+    </view>
+
+    <view class="block1" bindtap='tapSex'>
+      <text class="t1">性别</text>
+      <text class="userinfo-gender">{{sex==1?'男':'女'}}</text>
+    </view>
+
+    <view class="block1" bindtap='tapAddress'>
+      <text class="t1">地址</text>
+       <picker mode="region" bindchange="bindRegionChange" userinfo-address name="address" class="userinfo-address">
+            {{region[0]}}
+            {{region[1]}}
+            {{region[2]}}
+    </picker>
+    </view>
+
+  </view>
+              <view class='showView' style='display:{{Viewdisplay1}}'>
+                  <view class='update'>
+                      修改昵称
+                      <view class="updateView">
+                            <form bindsubmit="formSubmit">
+                                <input name='name' class="name" placeholder='{{name}}'/>
+                                 <button  class="but" form-type="submit">确认</button>
+                            </form>
+                      </view>
+                  </view>
+
+              </view>
+
+               <view class='showView' style='display:{{Viewdisplay2}}'>
+                  <view class='update'>
+                        修改性别
+                      <view class="updateView">
+                      <form bindsubmit="formSubmit2">
+                           <radio-group bindchange="radiochange">
+                              <radio value='0' checked="checked" >女</radio>
+                              <radio value='1' >男</radio>
+                              </radio-group>
+                            <button  class="but" form-type="submit">确认</button>
+                      </form>
+                      </view>
+                  </view>
+
+              </view>
+
+               <view class='showView' style='display:{{Viewdisplay3}}'/>
+               
+
+
+</view>
