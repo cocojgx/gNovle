@@ -2,7 +2,7 @@
 <!-- <text>个人信息</text>
 
 <navigator url="/gNovel/index/index" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator> -->
-<view class="bigBox" style='display:{{Viewdisplay4}}'>
+<view class="bigBox">
     <view class="avator">
       <image class="userinfo-avatar" src="{{head}}" mode="cover" bindtap="upload"></image>
     </view>
@@ -14,9 +14,7 @@
 
     <view class="block1" bindtap='tapSex'>
       <text class="t1">性别</text>
-      <text class="userinfo-gender" wx:if="{{sex==1}}">男</text>
-      <text class="userinfo-gender" wx:elif="{{sex==0}}">女</text>
-      <text class="userinfo-gender" wx:else>2</text>
+      <text class="userinfo-gender">{{sex==1?'男':'女'}}</text>
     </view>
 
     <view class="block1" bindtap='tapAddress'>
@@ -57,16 +55,9 @@
                   </view>
 
               </view>
-<button open-type="getUserInfo" bindgetuserinfo='outApp' class="outApp">退出登录</button>
 
                <view class='showView' style='display:{{Viewdisplay3}}'/>
+               
+
+
 </view>
-
-
-
-
-<view class="imgDiv" style='display:{{Viewdisplay5}}'>
-<image src="https://s1.ax1x.com/2020/06/19/NKU3HU.png" class="img" mode="aspectFill"></image>
-<button open-type="getUserInfo" bindgetuserinfo='inApp' class="inApp">登录</button>
-</view>
-
