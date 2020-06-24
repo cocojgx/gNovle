@@ -22,14 +22,29 @@ Page({
   onLoad: function ()
    {
      var that = this;
+     if(that.flag=='1')
+     {
+       that.setData({
+         Viewdisplay4:'block',
+         Viewdisplay5:'none'
+       })
+     }
+     if(that.flag==null||that.flag=='0')
+     {
+       that.setData
+       ({
+         Viewdisplay4:'none',
+         Viewdisplay5:'block'
+       })
+     }
+     
      wx.login
     ({     
       success: function (res) 
       {
-        console.log(res.code)
         wx.request
         ({
-          url: 'http://localhost:8080/getUser', //仅为示例，并非真实的接口地址
+          url: 'http://192.168.137.1:8080/getUser', //仅为示例，并非真实的接口地址
           data: 
           {
             code: res.code ,//上面wx.login()成功获取到的code
@@ -53,7 +68,8 @@ Page({
                 that.setData
                 ({
                   flag:res.data[0].flag,
-                  Viewdisplay4:'block'
+                  Viewdisplay4:'block',
+                  Viewdisplay5:'none'
                 })
             }
             if (res.data[0].flag=='0')
@@ -61,6 +77,7 @@ Page({
               that.setData
               ({
                 flag:res.data[0].flag,
+                Viewdisplay4:'none',
                 Viewdisplay5:'block'
               })
             }
@@ -78,7 +95,7 @@ Page({
     ({     
       success: function (res) 
       {
-        if (that.flag=='0')
+        if (that.flag=='0'||that.flag==null)
             {
               wx.showLoading
               ({
@@ -87,14 +104,14 @@ Page({
               
               setTimeout(function () {
                 wx.hideLoading()
-              }, 1500)
+              }, 1000)
               wx.reLaunch({
                 url: '../login/login',
               })
             }
         wx.request
         ({
-          url: 'http://localhost:8080/getUser', //仅为示例，并非真实的接口地址
+          url: 'http://192.168.137.1:8080/getUser', //仅为示例，并非真实的接口地址
           data: 
           {
             code: res.code ,//上面wx.login()成功获取到的code
@@ -135,7 +152,7 @@ Page({
          {
            that.flag='0'
           wx.request({
-            url: 'http://localhost:8080/updateFlag', //仅为示例，并非真实的接口地址
+            url: 'http://192.168.137.1:8080/updateFlag', //仅为示例，并非真实的接口地址
             data:
              { 
                id:that.data.id,   
@@ -156,7 +173,7 @@ Page({
           
           setTimeout(function () {
             wx.hideLoading()
-          }, 1500)
+          }, 1000)
 
           wx.redirectTo
           ({
@@ -199,7 +216,7 @@ Page({
     this.setData({Viewdisplay1:'none'})
 
     wx.request({
-      url: 'http://localhost:8080/updateUname', //仅为示例，并非真实的接口地址
+      url: 'http://192.168.137.1:8080/updateUname', //仅为示例，并非真实的接口地址
       data:
        { 
          id:that.data.id,   
@@ -210,7 +227,9 @@ Page({
       },
       success: function(res) 
       {
-        that.onLoad()
+        that.setData({
+          name:value
+        })
       }
 
 })
@@ -222,7 +241,7 @@ Page({
     var value = that.data.sex
     this.setData({Viewdisplay2:'none'})
     wx.request({
-      url: 'http://localhost:8080/updateSex', //仅为示例，并非真实的接口地址
+      url: 'http://192.168.137.1:8080/updateSex', //仅为示例，并非真实的接口地址
       data:
        { 
          id:that.data.id,   
@@ -234,7 +253,9 @@ Page({
       },
       success: function(res) 
       {
-        that.onLoad()
+        that.setData({
+          sex:value
+        })
       }
 })
 
@@ -255,7 +276,7 @@ Page({
       region:e.detail.value
     })
     wx.request({
-      url: 'http://localhost:8080/updateAddress', //仅为示例，并非真实的接口地址
+      url: 'http://192.168.137.1:8080/updateAddress', //仅为示例，并非真实的接口地址
       data:
        { 
          id:that.data.id,   
@@ -266,7 +287,7 @@ Page({
       },
       success: function(res) 
       {
-        that.onLoad()
+        
       }
 })
     
@@ -285,7 +306,7 @@ Page({
        {
          var avatarUrl = res.tempFilePaths[0];
         wx.request({
-          url: 'http://localhost:8080/updateAvatar', //仅为示例，并非真实的接口地址
+          url: 'http://192.168.137.1:8080/updateAvatar', //仅为示例，并非真实的接口地址
           data:
            { 
              id:that.data.id,   
@@ -296,7 +317,9 @@ Page({
           },
           success: function(res) 
           {
-            that.onLoad()
+            that.setData({
+              avatar:avatarUrl
+            })
           }
     
     })

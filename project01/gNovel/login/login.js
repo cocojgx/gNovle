@@ -14,8 +14,9 @@ login: function () {
         var f = 1;
           console.log('code:'+res.code)
           //发送请求
-          wx.request({
-              url: 'http://localhost:8080/getid', //改成自己的服务器地址
+          wx.request
+          ({
+              url: 'http://192.168.137.1:8080/getid', //改成自己的服务器地址
               data: 
               { 
                   code: res.code ,//上面wx.login()成功获取到的code
@@ -29,8 +30,10 @@ login: function () {
               header: {
                   'content-type': 'application/json' //默认值
               },
-              success: function (res) {
-                  console.log(res)
+              success: function (res) 
+              {
+
+                  console.log("1111111111")
               }
           })
       }
@@ -67,7 +70,8 @@ onLoad: function ()
 
     wx.getSetting({
       success: (res) => {
-        if (res.authSetting['scope.userInfo']) {
+        if (res.authSetting['scope.userInfo']) 
+        {
          
             wx.reLaunch
             ({
