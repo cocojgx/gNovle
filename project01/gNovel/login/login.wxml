@@ -1,7 +1,7 @@
 <view class="auth">
-  <image src="https://res.wx.qq.com/wxopenres/htmledition/images/favicon32f740.ico" class="img" mode="aspectFill"></image>
+  <image src="https://s1.ax1x.com/2020/06/19/Nu01pj.png" class="img" mode="aspectFill"></image>
   <view class="title">微信授权页面</view>
   <view class="describe">此页面是微信授权页面，点击下方按钮弹出授权或跳转页面</view>
   <button class="btn" open-type='getUserInfo' wx:if="{{canIUse}}" bindgetuserinfo='onAuth' bindtap='login'>点击微信授权</button>
-  <navigator wx:if="{{!canIUse}}" class="btn" url="/pages/auth/auth" open-type="reLaunch" hover-class="other-navigator-hover">已经授权点击调转</navigator>
+  <navigator wx:if="{{!canIUse}}" class="btn" url="/pages/users/users" open-type="reLaunch" hover-class="other-navigator-hover">已经授权点击调转</navigator>
 </view>
