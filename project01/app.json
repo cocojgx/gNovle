@@ -1,9 +1,9 @@
 {
   "pages": [
     
+    "gNovel/index/index",
     "gNovel/bootreads/bootreads",
     "gNovel/users/users",
-    "gNovel/index/index",
     "gNovel/bootsort/bootsort",
     "gNovel/text01/text01",
     "gNovel/bookshelf/bookshelf",

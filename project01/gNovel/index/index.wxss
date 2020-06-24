@@ -1,38 +1,118 @@
 /* gNovel/index/index.wxss */
-.slide-image{
-  width: 92%;
-  margin-left: 4%;
-  padding-top: 30rpx;
+.body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
+/* 轮播图start */
+.ggl{
+  width: 92%;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.slide-image , .slide-image image , .swipers{
+  width: 100%;
+  height: 260rpx;
+}
+/* 轮播图end */
+
+/* 搜索框start */
 .g_iput{
-    height: 60rpx;
-    font-size: 30rpx;
-    width: 500rpx;
-    margin-top: 10rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  width: 500rpx;
+  margin-top: 10rpx;
+}
+.viMax , .gkimg{
+display: flex;
+justify-content: center;
 }
 .gk_vi{
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
+display: flex;  
+flex-direction: column;
+width: 92%;
 }
 .gk_vi1{
-  display: flex;
-  flex-direction: row;
-  height: 80rpx;
-  border: 1rpx solid #e8e8e8;
-  border-radius: 15rpx;
-  width: 92%;
-  background: #e8e8e8;
-  margin-top: 20rpx;
+display: flex;
+flex-direction: row;
+height: 80rpx;
+border: 1rpx solid #e8e8e8;
+border-radius: 15rpx;
+background: #e8e8e8;
+margin-top: 20rpx;
+line-height: 80rpx;
+z-index: 9999;
 }
-.gk_vi1 image{
-    width: 80rpx;
-    height: 80rpx;
-    background: url(http://39.97.186.53/img/mbg01.png) -1232px -310px;
+.gkimg image{
+  margin-top: 18rpx;
+  width: 40rpx;
+  height: 40rpx;
 }
+/* 搜索框end */
 
+/*搜索弹窗start*/
+.tc{
+  width: 690rpx;
+  margin-top: -10rpx;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  background-color: width(177, 177, 177);
+  background-color: white;
+  z-index: 9999;
+  height: 1000rpx;
+  position: absolute;
+  top: 100rpx;
+}
+.tc-top{
+  width: 100%;
+  height: 60rpx;
+  background-color: whitesmoke;
+  text-align: center;
+}
+/* 屏蔽层 */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+   opacity: 0.5;
+   overflow: hidden;
+   z-index: 8999;
+   color: #fff;
+   overflow-y: hidden;
+  }
+.noData{
+  text-align: center;
+  width: 100%;
+  height: 100rpx;
+}
+.noData text{
+  line-height: 100rpx;
+  font-size: 24rpx;
+  color: darkgrey;
+}
+/* 关闭弹窗 */
+.x{
+  height: 80rpx;
+  width: 80rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.x image{
+margin-top: 20rpx;
+height: 40rpx;
+width: 40rpx;
+}
+/* 弹窗end */
+
+/* 推荐start */
 .gk_likeVi{
-  height: 450rpx;
   width: 92%;
   margin-left: 4%;
   margin-top: 20rpx;
@@ -42,14 +122,14 @@
   line-height: 80rpx;
 }
 .likeZZ{
-  font-size: 35rpx;
+  font-size: 22rpx;
   color: darkgrey;
 }
 .likeBoot{
-  font-size: 35rpx;
-}
-.likeVi3{
-  width: 140rpx;
+  width: 144rpx;
+  height: 30rpx;
+  overflow: hidden;
+  font-size: 24rpx;
 }
 .gk_txt1{
   font-size: 35rpx;
@@ -64,20 +144,57 @@
   height: 200rpx;
   width: 140rpx;
 }
+.replace{
+  margin-top: 20rpx;
+  float: right;
+  width: 125rpx;
+  height: 40rpx;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.replaceimg , .replaceimg image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: -12rpx;
+}
+.replacetxt{
+  width: 80rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+}
+/* 旋转 */
+.animationSlow {
+ animation-name: myfirst; /*动画的名称 */
+ animation-timing-function: linear; /*动画执行快慢的参数*/
+ animation-iteration-count: infinite; /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+ -webkit-animation-name: myfirst;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: infinite;
+}
+@keyframes myfirst {
+ from { transform: rotate(0deg); }/*开始转的角度*/
+ to { transform: rotate(360deg); }/*结束的角度*/
+}
+/*兼容ios*/
+@-webkit-keyframes myfirst {
+ from { transform: rotate(0deg); }
+ to { transform: rotate(360deg); }
+}
+/* 推荐end */
+
+/* 分类start */
 .bootVi{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .bootVi1{
-
-  height: 800rpx;
   width: 92%;
 }
 .bootXh{
   font-size: 35rpx;
   font-weight: 600;
-  height: 80rpx;
   line-height: 80rpx;
 }
 .bootVi2{
@@ -90,21 +207,24 @@
   margin-left: 20rpx;
 }
 .bootName{
+  width: 550rpx;
+  font-size: 36rpx;
   font-weight: 600;
   height: 70rpx;
+  overflow: hidden;
 }
 .bootJj{
-
+  width: 500rpx;
   height: 80rpx;
   font-size: 30rpx;
-  color: rgb(32, 32, 32);
+  color: rgb(117,117,117);
   text-overflow: ellipsis;
+  overflow: hidden;
   -webkit-line-clamp:3;
 }
 .bootZZ{
 
-  font-size: 30rpx;
-  color: rgb(20, 20, 20);
+  font-size: 32rpx;
   height: 60rpx;
   line-height: 60rpx;
 }
@@ -112,3 +232,4 @@
   height: 200rpx;
   width: 140rpx;
 }
+/* 分类end */
