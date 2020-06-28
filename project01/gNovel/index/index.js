@@ -14,7 +14,6 @@ Page({
     nodata:false,
     //推荐
     booksTuiJian:[],
-    TJnum:[],
     animationTime:'',
     //分类
     bookShelf:[],
@@ -29,14 +28,9 @@ Page({
   //推荐
   Recommend:function(){
     var that=this
-    that.setData({  animationTime:'700ms',TJnum:[] })
-    for(var i=0;i<4;i++){
-      that.data.TJnum[i]=Math.floor(Math.random()*79)+1;
-      for(var j=0;j< i;j++ ){ if(that.data.TJnum[i] == that.data.TJnum[j]){ that.data.TJnum[i]=that.data.TJnum[j]+1; } }
-      if(that.data.TJnum.length>3){break;}
-    }console.log('推荐'+that.data.TJnum)
+    that.setData({  animationTime:'700ms' })
     wx.request({
-      url: 'http://192.168.117.43:8080/maybeLike?id='+that.data.TJnum[0]+','+that.data.TJnum[1]+','+that.data.TJnum[2]+','+that.data.TJnum[3], 
+      url: 'http://192.168.117.43:8080/maybeLike', 
       header:{ "Content-Type":"application/json" },
       success: function(res) {  var list=res.data; that.setData({booksTuiJian:list, }) } 
     })
@@ -50,7 +44,6 @@ Page({
       u[i]=v;
       for(var j=0;j<i;j++){ if(u[j]==u[i]){ i--; break; }} 
     }
-    console.log('分类'+u)
     for(var i=0;i<4;i++){
       wx.request({
         url: 'http://192.168.117.43:8080/getBcId?id='+u[i], 
@@ -80,7 +73,7 @@ Page({
           stopLoadMoreTiem:false, isScroll:'scroll' , showModal:false , searchShow: [] , pageNum: 1 ,
           keyWord:'' , listCounts:'' , placeholders:'搜索小说' , nodata:false,
           //推荐
-          booksTuiJian:[] , TJnum:[] ,  animationTime:'' ,
+          booksTuiJian:[] , animationTime:'' ,
           //分类
           bookShelf:[],
       });
